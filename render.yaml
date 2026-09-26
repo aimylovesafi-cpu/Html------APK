@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-web-app
+    env: static
+    buildCommand: echo "Static site - no build needed"
+    staticPublishPath: ./
+    envVars:
+      - key: NODE_ENV
+        value: production
